@@ -1,7 +1,7 @@
 {% trans_default_domain "Admin.Advparameters.Feature" %}
 
 {% block perfs_memcache_servers %}
-<div class="form-group">
+<div class="form-group memcache">
     <a
         class="btn btn-default"
         data-toggle="collapse"
@@ -38,7 +38,7 @@
     </div>
 </div>
 
-<div id="servers-list">
+<div id="servers-list" class="memcache">
     <div class="form-group">
         <table class="table" id="servers-table">
             <thead>
