@@ -88,6 +88,7 @@ services:
 
     prestashop.adapter.upload_quota.configuration:
         class: 'PrestaShop\PrestaShop\Adapter\Upload\UploadQuotaConfiguration'
+        arguments: ['@prestashop.adapter.legacy.configuration']
 
     prestashop.adapter.notifications.configuration:
         class: 'PrestaShop\PrestaShop\Adapter\Admin\NotificationsConfiguration'
