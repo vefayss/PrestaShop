@@ -240,8 +240,7 @@ class ProductController extends FrameworkBundleAdminController
                 'enableSidebar' => true,
                 'help_link' => $this->generateSidebarLink('AdminProducts'),
                 'is_shop_context' => $this->get('prestashop.adapter.shop.context')->isShopContext(),
-                'permission_error' => $permissionError,
-                'layoutTitle' => $this->trans('Products', 'Admin.Global'),
+                'permission_error' => $permissionError
             )
         );
     }
@@ -616,7 +615,6 @@ class ProductController extends FrameworkBundleAdminController
             'is_shop_context' => $this->get('prestashop.adapter.shop.context')->isShopContext(),
             'editable' => $this->isGranted(PageVoter::UPDATE, 'ADMINPRODUCTS_'),
             'drawerModules' => $drawerModules,
-            'layoutTitle' => $this->trans('Product', 'Admin.Global'),
         );
     }
 
